@@ -1,10 +1,12 @@
-const mdLinks = require('../');
+const {lerArquivo} = require('../'); //importando
 
 
 describe('mdLinks', () => {
 
-  it('should...', () => {
-    console.log('FIX ME!');
+  it('Deveria Ler Conteudo', () => {
+    const meDeve = lerArquivo("./test/files/oneFile.md"); //ação
+    expect(meDeve).resolves.toEqual ("Olá mundo");
+  
   });
 
 });
