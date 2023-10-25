@@ -1,19 +1,18 @@
-# Me leia...
-Se vc está lendo isso deu certo o Marco 4 - Ler no terminal!!!!
-https://github.com/ribeirober1208
 
-# Projeto MD-Links 
+## Projeto MD-Links 
 
 Quarto projeto desenvolvido para o bootcamp da [@Laboratória](https://www.laboratoria.la/br) O projeto Markdown Links tem como foco BackEnd (NodeJS e JavaScript) e identifica links em arquivos markdown e seus respectivos status https. Pode ser executado através de CLI.
 
 ## Índice
 
-* [1. Prefácio](#1-prefacio) 🗒️
-* [2. Fluxograma](#2-fluxograma) 📄
-* [3. Instalação](#3-Instalação) 🔽
-* [4. Terminal e seus comandos](#4-Terminal-e-seus-comandos)💻
-* [5. Testes](#5-testes) 📊
-* [6. Checklists de Objetivos Alcançados](#6-checklist-de-objetivos-alcançados) 🏆
+* [1. Prefácio](#1-prefacio) 
+* [2. Fluxograma](#2-fluxograma) 
+* [3. Instalação](#3-Instalação) 
+* [4. Terminal e seus comandos](#4-Terminal-e-seus-comandos)
+* [5. Testes](#5-testes) 
+* [6. Checklists de Objetivos Alcançados](#6-checklist-de-objetivos-alcançados)
+* [7. Tecnologias](#7-tecnologias)
+* [8. Desenvolvido por](#8-desenvolvido)
 
 ***
 
@@ -25,51 +24,12 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## Fluxograma 
 
-<div align="center">
- <img alt="fluxograma" width="550" src="https://user-images.githubusercontent.com/30864314/233381730-1e9bc58f-c616-45fe-8811-75156a51cf0c.png" /><br>
-  Fluxograma de estudos e tomada de decisões.
-</div>
-
-***
 ## Instalação
 
-*  `npm install md-links-analeticia`
-
-***
 ## Terminal e seus comandos
-O usuário que utilizar a ferramenta desenvolvida, poderá localizar os links em um arquivo de interesse com o comando abaixo:
-* `md-links caminho-do-arquivo` </br>
-  </br><img alt="Ferramenta utilizada no caminho de arquivo ./folder/arquivo.md" width="850" src="https://user-images.githubusercontent.com/30864314/234978996-f6188a16-c883-4d90-9588-1de94dd23d71.png" /><br>
 
-
-A segunda possibilidade de uso é inserir o comando --validate após o caminho do arquivo, para que assim a ferramenta informe os links que estão com erros.
-* `md-links caminho-do-arquivo --validate` </br>
-
-  </br><img alt="Exemplo da funcionalidade --validate" width="850" src="https://user-images.githubusercontent.com/30864314/234980216-6f70014b-01d5-476b-a074-116069da493a.png" /><br>
-
-A terceira funcionalidade, é verificar informações resumidas sobre os links, acrescentando o comando --stats:
-* `md-links caminho-do-arquivo --stats` </br>
-  </br><img alt="Exemplo da funcionalidade --stats" width="850" src="https://user-images.githubusercontent.com/30864314/234982314-546f4234-56c8-4c32-b41d-6f818a069077.png" /><br>
-
-Também é possível utilizar as duas opções acima, juntas:
-* `md-links caminho-do-arquivo --stats --validate` </br>
-</br><img alt="Exemplo da funcionalidade --stats" width="850" src="https://user-images.githubusercontent.com/30864314/234982693-e24db545-29f1-42fd-96a9-7b49a1132be2.png" /><br>
-
-A ferramenta está apta a tratar os erros, exemplo:
-1) O usário digita um arquivo sem extensão .md:
-* `md-links caminho-do-arquivo-semMd` </br>
-2) O usuário insere um arquivo vazio:
-* `md-links caminho-do-arquivo-vazio` </br>
-
-</br><img alt="Exemplo de tratativas de erros" width="850" src="https://user-images.githubusercontent.com/30864314/234984506-bb1bba85-4dfe-4d55-b42f-d51534ae079e.png" /><br>
-
-***
 ## Testes
 
-A aplicação foi finalizada com 100% de cobertura nos testes:
-</br><img alt="Testes realizados" width="850" src="https://user-images.githubusercontent.com/30864314/235223588-ac4981ad-8b1d-4638-a11c-16c9e2038f9f.png" /><br>
-
-***
 ## Checklists de Objetivos Alcançados 🏆
 
 - [:star2:] Possui CLI.
@@ -80,7 +40,11 @@ A aplicação foi finalizada com 100% de cobertura nos testes:
 - [:star2:] Inclui uma definição de produto clara e informativa no README.md.
 - [:star2:] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e branches.
 - [:star2:] Package.json: deve possuir nome, versão, descrição, autor, licença, dependências e scripts (pretest, test e etc).
+
 ***
+
+## 7. Tecnologias
+
 <div align="center">
  
   <br>
@@ -92,9 +56,13 @@ A aplicação foi finalizada com 100% de cobertura nos testes:
   <img  align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
   <br>
   <br>
-  Desenvolvido por 
-  <br>
   
+  ***
+
+  ## 8. Desenvolvido por
+
+<div>  
+  <br>
   <br> ALÊ RIBEIRO <br> 
   [Linkedin](https://www.linkedin.com/in/alessandra.ribeiro) | [Github](https://github.com/ribeirober1208)
   <br>
@@ -102,4 +70,4 @@ A aplicação foi finalizada com 100% de cobertura nos testes:
   
 </div>
  
-***
+  ***
