@@ -30,7 +30,7 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## Testes
 
-## Checklists de Objetivos Alcançados 🏆
+## Checklists de Objetivos Alcançados 
 
 - [:star2:] Possui CLI.
 - [:star2:] É instalável.
@@ -45,15 +45,15 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## 7. Tecnologias
 
-<div align="center">
+<div>
  
   <br>
   <br>
-  <img align="center" alt="Jest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" /> 
-  <img align="center" alt="git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-  <img align="center" alt="Ale-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-  <img  align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+  <img alt="Jest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" /> 
+  <img alt="git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <img alt="Ale-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img alt="vscode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+  <img alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
   <br>
   <br>
   
@@ -64,7 +64,8 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 <div>  
   <br>
   <br> ALÊ RIBEIRO <br> 
-  [Linkedin](https://www.linkedin.com/in/alessandra.ribeiro) | [Github](https://github.com/ribeirober1208)
+  [@Linkedin](https://www.linkedin.com/in/alessandra.ribeiro)
+  [@Github](https://github.com/ribeirober1208)
   <br>
   <br>
   
