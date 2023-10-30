@@ -1,11 +1,14 @@
-const {lerArquivo} = require('../'); //importando
+const {mdLinks} = require('../src/index.js');
 
 
 describe('mdLinks', () => {
 
-  it('Deveria Ler Conteudo', () => {
-    const meDeve = lerArquivo("./test/files/oneFile.md"); //ação
-    expect(meDeve).resolves.toEqual ("Olá mundo");
+  it('Ler Conteudo', async () => {
+    const links = await mdLinks(caminhoDoArquivo);
+    expect(links).toBeInstanceOf(Array);
+    expect(links[0]).toHaveProperty('href');
+    expect(links[0]).toHaveProperty('text');
+
   
   });
 
