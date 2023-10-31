@@ -39,7 +39,7 @@
     "url": "ribeirober1208"
   },
   "bin": {
-    "md-links": "./cli.js"
+    "md-links": "./src/cli.js"
   },
   "devDependencies": {
     "chai": "^4.3.10",

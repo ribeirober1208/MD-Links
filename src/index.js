@@ -1,3 +1,4 @@
+const { error } = require("console");
 const fs = require("fs");
 
 function mdLinks(caminhoDoArquivo) {
@@ -7,10 +8,12 @@ function mdLinks(caminhoDoArquivo) {
         console.log(err);
         reject();
       }
-      const links = data.match(/https?:\/\/[^\s/$.?#].[^\s]*/gi);
+      
+      const links = data.match(/https?:\/\/[^\s/$.?#].[^\s]*/gi); //regex links md markdow
       if (links) {
         
-        resolve(links.map((link) => ({ href: link, text: '', file: caminhoDoArquivo })));//
+        //resolve(links.map((link) => ({ text: '', href: link,  file: caminhoDoArquivo })));
+        resolve(links.map((link) => ({ text: '', href: link,  file: caminhoDoArquivo, broken: false })));
        
       } else {
         resolve([]);
@@ -19,30 +22,62 @@ function mdLinks(caminhoDoArquivo) {
   });
 }
 
-async function validarLinks(links) {
+function enviarRequisicao(link) {
+  try {
+   return fetch (link).then(
+    resultado => {
+      console.log(resultado.status);
+      return { 
+        status: resultado.status,
+        ok : 'ok'
+      }
+    }
+  ).catch( 
+    error => {
+      console.error(error);
+      return {
+        status : error,
+        ok: 'fail',
+      };
+
+    
+    }
+  )  
+  } catch (error) {
+
+    return error
+  }
+}
+function validarLinks(links) {
+ 
   const resultados = [];
 
   for (const link of links) {
-    const resultado = {
+    let resultado = {
       href: link.href,
       text: link.text,
       file: link.file,
     };
+  enviarRequisicao (link.href);
 
-    try {
+   /* try {
       const response = await fetch(link.href);
-
-      if (response.ok) {
+      console.log(response.status);
+      if (response.status === 200) {
         resultado.status = response.status;
         resultado.ok = 'ok';
       } else {
-        resultado.status = response.status;
+        resultado.status = 400;
         resultado.ok = 'fail';
+        resultado.broken = true;
       }
+
     } catch (error) {
-      resultado.status = null;
+      console.log(error);
+      resultado.status = error.status;
       resultado.ok = 'fail';
-    }
+      resultado.broken = true;
+    }*/
 
     resultados.push(resultado);
   }
@@ -53,8 +88,8 @@ async function validarLinks(links) {
 function stats(links) {
     const totalLinks = links.length;
     const linksUnicos = [...new Set(links.map(link => link.href))].length;
-    const brokenLinks = links.filter((link) => link.status !== 200).length;
-  
+    const brokenLinks = links.filter((link) => link.broken).length; 
+
     return { 
         total: totalLinks, 
         unique: linksUnicos, 
