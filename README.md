@@ -30,7 +30,7 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## Terminal e seus comandos
 
-# Comando validate:
+- Comando validate:
 
 md-links ./files/links.md --validate
 
@@ -38,7 +38,7 @@ md-links ./files/links.md --validate
 
 ![--validate Doc sem links](./gallery/zerolinks.png)
 
-# Comando stats:
+- Comando stats:
 
 md-links ./files/links.md --stats
 
