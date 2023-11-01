@@ -24,9 +24,28 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## Fluxograma 
 
+![Fluxograma](./gallery/Fluxograma_MD-links%20(1).png)
+
 ## Instalação
 
 ## Terminal e seus comandos
+
+# Comando validate:
+
+md-links ./files/links.md --validate
+
+![--validate](./gallery/validate.png)
+
+![--validate Doc sem links](./gallery/zerolinks.png)
+
+# Comando stats:
+
+md-links ./files/links.md --stats
+
+![--stats](./gallery/stats.png)
+
+![--stats Doc vazio](./gallery/statsZero.png)
+
 
 ## Testes
 
@@ -64,8 +83,8 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 <div>  
   <br>
   <br> ALÊ RIBEIRO <br> 
-  [@Linkedin](https://www.linkedin.com/in/alessandra.ribeiro)
-  [@Github](https://github.com/ribeirober1208)
+  [Linkedin](https://www.linkedin.com/in/alessandra.ribeiro)
+  [Github](https://github.com/ribeirober1208)
   <br>
   <br>
   

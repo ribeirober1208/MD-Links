@@ -1,11 +1,14 @@
 const fs = require("fs");
+//tornar repositório instalável
+//rever erros do test
 
 function mdLinks(caminhoDoArquivo) {
   return new Promise(function (resolve, reject) {
     fs.readFile(caminhoDoArquivo, "utf8", (err, data) => {
       if (err) { 
         console.log(err);
-        reject();
+        reject(new Error('Erro ao ler o arquivo'));
+        return;
       }
       
       const links = data.match(/https?:\/\/[^\s/$.?#].[^\s]*/gi);
