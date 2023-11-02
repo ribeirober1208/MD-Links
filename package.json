@@ -17,7 +17,7 @@
   "scripts": {
     "md-links": "node cli.js",
     "lint": "npx eslint ../MD-Links",
-    "test": "jest"
+    "test": "jest --coverage" 
   },
   "keywords": [
     "md-links",

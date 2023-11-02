@@ -28,26 +28,48 @@ Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivo
 
 ## Instalação
 
+Instale a biblioteca no terminal através do comando:
+
+```
+npm install https://github.com/ribeirober1208/MD-Links
+```
+
 ## Terminal e seus comandos
 
 - Comando validate:
 
+
+```
 md-links ./files/links.md --validate
+```
+
 
 ![--validate](./gallery/validate.png)
 
+- Comando validate, para arquivos vazios:
+```
+md-links ./files/empty.md --validate
+``````
 ![--validate Doc sem links](./gallery/zerolinks.png)
 
 - Comando stats:
-
+```
 md-links ./files/links.md --stats
-
+``````
 ![--stats](./gallery/stats.png)
 
+- Comando stats, para arquivos vazios:
+```
+md-links ./files/empty.md --validate
+``````
 ![--stats Doc vazio](./gallery/statsZero.png)
 
 
 ## Testes
+
+ - A aplicação tem 100% de cobertura:
+
+![--stats Doc vazio](./gallery/teste.png)
 
 ## Checklists de Objetivos Alcançados 
 
@@ -80,14 +102,6 @@ md-links ./files/links.md --stats
 
   ## 8. Desenvolvido por
 
-<div>  
-  <br>
-  <br> ALÊ RIBEIRO <br> 
-  [Linkedin](https://www.linkedin.com/in/alessandra.ribeiro)
-  [Github](https://github.com/ribeirober1208)
-  <br>
-  <br>
-  
-</div>
- 
-  ***
+  <br> Alê Ribeiro <br> 
+  - [@Linkedin](https://www.linkedin.com/in/alessandra.ribeiro)
+  - [@Github](https://github.com/ribeirober1208)

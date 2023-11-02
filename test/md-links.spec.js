@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { mdLinks } = require('../src/index.js');
+const { mdLinks, validarLinks, stats } = require('../src/index.js');
 
 describe('mdLinks', () => {
   it('Ler Conteudo com links', () => {
@@ -33,10 +33,10 @@ describe('validarLinks', () => {
       { href: 'https://developer.mozilla.org/pt-BR', text: 'MND', file: './files/links.md' }
     ];
 
-    //return validarLinks(links).then(resultados => {
-    return validarLinks('./files/links.md').then(resultados => {  
+    return validarLinks(links).then(resultados => {
+
       expect(resultados).to.be.an('array');
-      expect(resultados).to.have.lengthOf(2);
+      expect(resultados).to.have.lengthOf(3);
 
       const primeiroResultado = resultados[0];
       expect(primeiroResultado).to.have.property('href', 'https://www.google.com');
@@ -46,6 +46,25 @@ describe('validarLinks', () => {
       expect(primeiroResultado).to.have.property('ok').that.is.oneOf(['ok', 'fail']);
       expect(primeiroResultado).to.have.property('broken').that.is.a('boolean');
     });
+  });
+});
+
+describe('stats', () => {
+  it('Deve retornar as estatísticas corretas para uma lista de links', () => {
+    const links = [
+    
+      { href: 'https://www.google.com', status: 200 },
+      { href: 'https://www.laboratoria.la/br', status: 200 },
+      { href: 'https://developer.mozilla.org/pt-BR', status: 200 },
+      { href: 'https://netflyx.com', stats: 404 },
+      { href: 'https://gYthub.com', stats: 404 },
+     
+    ];
+   
+      const result = stats(links);
+
+    expect(result).to.deep.equal({ total: 5, unique: 5, broken: 0 });
+
   });
 });
 

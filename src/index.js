@@ -1,6 +1,4 @@
 const fs = require("fs");
-//tornar repositório instalável
-//rever erros do test
 
 function mdLinks(caminhoDoArquivo) {
   return new Promise(function (resolve, reject) {
@@ -15,6 +13,7 @@ function mdLinks(caminhoDoArquivo) {
       const titles = data.match(/\[([^\]]+)\]/g);
 
       if (links) {
+       
         const linksInfo = links.map((link, index) => ({
           text: titles[index].slice(1, -1),
           href: link,
@@ -56,7 +55,7 @@ function validarLinks(links) {
         });
     });
   }
-
+  
   const promessas = links.map(fazerRequisicao);
 
   return Promise.all(promessas);
