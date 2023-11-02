@@ -16,17 +16,17 @@ Quarto projeto desenvolvido para o bootcamp da [@Laboratória](https://www.labor
 
 ***
 
-## Prefácio
+## 1. Prefácio
 
 Markdown é usada em muitas plataformas que manipulam texto (GitHub, fórum, blogs e etc) e é muito comum encontrar arquivos com este formato em qualquer repositório (começando pelo tradicional README.md). Os arquivos Markdown normalmente contém links que podem estar quebrados, ou que já não são válidos, prejudicando muito o valor da informação que está ali.
 
 Nesse projeto, criou-se uma ferramenta, usando Node.js, que le e analise arquivos no formato Markdown, para verificar os arquivos que contenham links e mostrar algumas estatísticas. Neste projeto, foi criado uma ferramenta de linha de comando (CLI) assim como a sua própria biblioteca (library) em Javascript usando o Node.js.
 
-## Fluxograma 
+## 2. Fluxograma 
 
 ![Fluxograma](./gallery/Fluxograma_MD-links%20(1).png)
 
-## Instalação
+## 3. Instalação
 
 Instale a biblioteca no terminal através do comando:
 
@@ -34,7 +34,7 @@ Instale a biblioteca no terminal através do comando:
 npm install https://github.com/ribeirober1208/MD-Links
 ```
 
-## Terminal e seus comandos
+## 4. Terminal e seus comandos
 
 - Comando validate:
 
@@ -65,13 +65,13 @@ md-links ./files/empty.md --validate
 ![--stats Doc vazio](./gallery/statsZero.png)
 
 
-## Testes
+## 5. Testes
 
  - A aplicação tem 100% de cobertura:
 
 ![--stats Doc vazio](./gallery/teste.png)
 
-## Checklists de Objetivos Alcançados 
+## 6. Checklists de Objetivos Alcançados 
 
 - [:star2:] Possui CLI.
 - [:star2:] É instalável.
